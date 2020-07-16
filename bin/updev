@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+originalDir=$PWD
+cd docker
+docker-compose up -d nginx mysql redis beanstalkd
+cd $originalDir
